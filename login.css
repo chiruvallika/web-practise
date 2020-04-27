@@ -1,0 +1,50 @@
+body {
+    
+}
+.head{
+    text-align:center;
+    color:white;
+   
+}
+.first{
+    background-color:lightgreen;
+     padding-left:35px;
+    padding-right:35px;
+    border-radius:5px;
+    padding-bottom:50px;
+    padding-top:20px;
+    
+}
+.second{
+     background-color:green;
+     padding:50px 30px;
+     border-radius:5px;
+    
+    font-size:10px;
+}
+.un{
+    padding-top:10px;
+    margin-top:10px;
+}
+.pw{
+    padding-top:10px;
+}
+.button{
+    margin-top:10px;
+    border-radius:5px;
+    
+    border:1px white;
+}
+.password{
+    margin-top:10px;
+    border-radius:3px;
+    border:1px white;
+    margin-bottom:10px;
+}
+.name{
+    margin-top:10px;
+    border-radius:3px;
+    border:1px white;
+    margin-bottom:10px;
+}
+
