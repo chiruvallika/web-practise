@@ -1,0 +1,67 @@
+body {
+    
+    
+    background-color:skyblue;
+}
+.login_form
+{
+    
+    
+    text-align:center;
+}
+
+.email
+{
+    border-radius:20px;
+    padding:10px;
+    margin:10px 0;
+    border:2px solid black;
+    width:190px;
+    
+}
+.password
+{
+    
+    border-radius:20px;
+    padding:10px;
+    margin:10px 0;
+    border:2px solid black;
+    width:190px;
+    
+}
+.button
+{
+      
+    border-radius:20px;
+    padding:10px;
+    margin:10px 0;
+    border:2px solid black;
+    width:215px;
+}
+.facebook
+{
+    border-radius:20px;
+    padding:10px;
+    margin:10px 0;
+    border:2px solid black;
+    width:215px;
+    background-color:blue;
+}
+.google
+{
+    border-radius:20px;
+    padding:10px;
+    margin:10px 0;
+    border:2px solid black;
+    width:215px;
+    background-color:red;
+}
+.epam
+{
+    border-radius:20px;
+    padding:10px;
+    margin:10px 0;
+    border:2px solid black;
+    width:215px;
+    background-color:orange;
+}
