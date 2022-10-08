@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="topics.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div id="slideDown" class="text-white bg-dark col-6  p-3 m-3 text-center rounded thread-dark">
+        Subjects
+    </div>
+        <div id="content" class="bg-secondary col-6 p-3 m-3 rounded text-center">
+            Maths
+            <div id="innerContent" class="text-center">
+                <div  class="border border-dark m-2 p-2 bg-dark text-white rounded"><a class="text-white" href="https://en.wikipedia.org/wiki/Calculus#:~:text=Calculus%2C%20originally%20called%20infinitesimal%20calculus,of%20generalizations%20of%20arithmetic%20operations.">Calculus</a></div>
+                <div  class="border border-dark m-2 p-2 bg-dark text-white rounded"><a class="text-white" href="https://en.wikipedia.org/wiki/Algebraic_expression#:~:text=Algebraic%20expression%20%2D%20Wikipedia-,Algebraic%20expression,that%20is%20a%20rational%20number).">Algebric</a></div>
+                <div  class="border border-dark m-2 p-2 bg-dark text-white rounded"><a class="text-white" href="https://en.wikipedia.org/wiki/Mathematical_logic#:~:text=Mathematical%20logic%20is%20a%20subfield,of%20formal%20logic%20to%20mathematics.&text=Mathematical%20logic%20is%20often%20divided,%2Dorder%20logic%2C%20and%20definability.">Logic</a></div>
+            </div>
+        </div>
+        <div id="content2" class="col-6 bg-secondary text-center mt-4 m-3 rounded p-3">
+            PPS
+            <div id="innerContent2" class="rounded p-2">
+                <div class="border border-dark m-2 p-2 bg-dark text-white rounded"><a class="text-white" href="">Data Structurs</a></div>
+                <div class="border border-dark m-2 p-2 bg-dark text-white rounded"><a class="text-white" href="">Algorithm</a></div>
+                <div class="border border-dark m-2 p-2 bg-dark text-white rounded"><a class="text-white" href="">Functions</a></div>
+            </div>
+        </div>
+    
+    <script>
+        $(function(){
+            $("#slideDown").click(function(){
+                $("#content").slideDown()
+            })
+            $("#content").click(function(){
+                $("#innerContent").slideToggle()
+            })
+            $("#slideDown").click(function(){
+                $("#content2").slideDown()
+            })
+            $("#content2").click(function(){
+                $("#innerContent2").slideToggle()
+            })
+        })
+
+    </script>    
+</body>
+</html>
