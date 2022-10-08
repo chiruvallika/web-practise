@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<style>
+    .item{
+        border:1px solid red;
+    }
+</style>
+</head>
+<body>
+    <div class="bg-info p-5 mt-5 border shadow rounded w-75 ml-auto mr-auto text-center">
+        <div class="ml-5" >
+            <div class="d-flex" >
+                <input id="text" class="rounded border p-2" type="text" placeholder="Enter text here"><br>
+                <button class="btn btn-dark" id="add" onclick="add(); clear();">+</button>
+                <button class="btn btn-dark" id="remove" onclick="remove()">-</button>
+            </div> 
+        </div>
+        <div id="demo" class="border mt-4 p-4 bg-light rounded" ></div>
+    </div>
+    <script>
+         var myArr=[];
+       function add(){
+          
+           var input = document.getElementById("text").value;
+           myArr.push(input);
+           var output="";
+           for(var i=0;i<myArr.length;i++)
+           {
+                 output = output + `<div class="bg-success rounded p-2 m-1 text-light" >${myArr[i]}</div>` 
+                
+           }
+           console.log(output);
+           console.log(input);
+           function clear(){
+           var input = document.getElementById("text").value;
+           document.getElementById("text").value="";
+       }
+           document.getElementById("demo").innerHTML= output;
+       }
+      
+       function remove(){
+        document.getElementById("demo").innerHTML= "";
+        connsole.log(myArr);
+       }
+      
+    </script>
+</body>
+</html>
+<!-- let finalElements = ``
+topics.forEach(function(item){
+    finalElements += `<div>${item.title}</div>`
+})
+
+topics_list.html(finalElements) -->

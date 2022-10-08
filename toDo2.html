@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/7.0.2/math.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="bg-primary p-5 ml-auto text-center">
+    <p class=" text-danger">enter any number to check does it matches with the system number</p>
+    <div id="demo">
+       <input class="bg-dark" type="text" id="inp"><br><br>
+       <button class="bg-danger" onclick="check()">check</button>
+    </div>
+
+<div id="result"></div>
+</div>
+    <script>
+        function check(){
+            var input = document.getElementById("inp").nodeValue;
+            const num = math.ceil(math.random()*10);
+            console.log(num);
+            if(input == num){
+                document.getElementById("result").innerHTML = "matched";
+            }
+            else{
+                document.getElementById("result").innerHTML = "mis matched";
+            }
+        }
+       
+
+    </script>
+</body>
+</html>
